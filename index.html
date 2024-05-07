@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recipie project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #navlist {
+            list-style: none;
+        }
+
+        .container {
+            min-height: 100%;
+            width: 100vw;
+            overflow-x: none;
+            background-color: #D9AFD9;
+            background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+            /* background-color: black; */
+        }
+
+        .navcontainer {
+            width: 100vw;
+            background-color: #00DBDE;
+            background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+            min-height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        #navlogo {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            width: 100%;
+            overflow-x: none;
+        }
+
+        #navlist {
+            width: 100%;
+            /* margin-left:15px ;
+            margin-right: 15px; */
+            padding: 15px;
+
+            font-size: 2.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        #navlogo {
+            font-size: 2.8rem;
+            color: whitesmoke;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: azure;
+        }
+
+        #navitem {
+            display: flex;
+            gap: 40px;
+
+
+        }
+        .footerbox{
+            background-color: #00DBDE;
+            background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+            color: whitesmoke;
+            width: 100%;
+            text-align: center;
+            min-height: 40px;
+
+        }
+        .footerbox {
+            color: azure;
+            font-size: 2rem;
+         /* position: relative;
+         top: 1315px; */
+        }
+        .contentbox{
+            width: 70%;
+            margin: auto;
+            padding: 40px;
+            background-color: white;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+            box-shadow: 3px 5px 5px black;
+        }
+        .item{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .rightbox{
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s linear 0s;
+            border-radius: 20px;
+            box-shadow: 1px 2px 10px black;
+            
+            
+            
+        }
+        .rightbox .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            border-radius: 20px;
+            background-color: rgba(19, 18, 18, 0.484);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.3s linear 0s;
+
+        }
+        .rightbox:hover .overlay{
+            opacity: 1;
+        }
+        .rightbox .overlay span{
+            color: white;
+            font-size: 1.4rem;
+        }
+
+        .rightbox img{
+            height: 300px;
+            border-radius: 20px;
+            transition: all 2s ;
+        }
+        .rightbox:hover{
+            transform: scale(1.1);
+        }
+
+        .ingbox{
+            font-size:1.1rem;
+            font-family: 'Libre Baskerville', serif;
+font-family: 'Lobster', sans-serif;
+            
+        }
+    .recbox{
+            font-size: 1.1rem;
+            font-family: 'Libre Baskerville', serif;
+font-family: 'Lobster', sans-serif;
+        }
+        .head2{
+            padding-bottom: 10px;
+            font-family: 'Lobster', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="navcontainer">
+                <nav>
+                    <ul id="navlist">
+                        <li>
+                            <p id="navlogo">Code Help da Dhabba</p>
+                        </li>
+                        <li>
+                            <div id="navitem">
+                                <a href="#">Home</a>
+                                <a href="#">Contact us</a>
+                                <a href="#">About</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <main>
+            <div class="contentbox">
+                <section>
+                    <div class="item">
+                        <div class="leftbox">
+                            <h2 class="head2">Gulab Jamun</h2>
+                            <div><h2>ingredents</h2>
+                            <ul class="ingbox">
+                                <li>bread </li>
+                                <li>sugar</li>
+                                <li>oil</li>
+                            </ul></div>
+                            <div> <h2>recipi</h2>
+                            <ol class="recbox">
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam!</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas expedita placeat, cum esse quod reprehenderit?</li>
+                            </ol></div>
+                            
+                           
+
+                        </div>
+                        <div class="rightbox">
+                            <img src="gulab jamun.jpeg" alt="gulab jamun">
+                            <div class="overlay"><span>Click To Buy</span></div>
+    
+                        </div>
+
+                    </div>
+                    
+                </section>
+
+
+
+                <section>
+                    <div class="item">
+                        <div class="leftbox">
+                            <h2 class="head2">Zadue Barfi</h2>
+                            <div><h2>ingredents</h2>
+                            <ul class="ingbox">
+                                <li>bread </li>
+                                <li>sugar</li>
+                                <li>oil</li>
+                            </ul></div>
+                            <div> <h2>recipi</h2>
+                            <ol  class="recbox">
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam!</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas expedita placeat, cum esse quod reprehenderit?</li>
+                            </ol></div>
+                            
+                           
+
+                        </div>
+                        <div class="rightbox">
+                            <img src="brfi.jpeg" alt="brfi">
+                            <div class="overlay"><span>Click To Buy</span></div>
+    
+                        </div>
+
+                    </div>
+                    
+                </section>
+
+
+
+                <section>
+                    <div class="item">
+                        <div class="leftbox">
+                            <h2 class="head2">Malai Laddo</h2>
+                            <div><h2>ingredents</h2>
+                            <ul  class="ingbox">
+                                <li>bread </li>
+                                <li>sugar</li>
+                                <li>oil</li>
+                            </ul></div>
+                            <div> <h2>recipi</h2>
+                            <ol class="recbox">
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam!</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas expedita placeat, cum esse quod reprehenderit?</li>
+                            </ol></div>
+                            
+                           
+
+                        </div>
+                        <div class="rightbox">
+                            <img src="laddo.jpeg" alt="gulab jamun">
+                            <div class="overlay"><span>Click To Buy</span></div>
+    
+                        </div>
+
+                    </div>
+                    
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footerbox">
+                <p>
+                    Copyright  &copy; CodeHelp da Dhabba Pvt Ltd 2023. All Rights Reserved
+                </p>
+            </div>
+        </footer>
+    </div>
+   
+
+
+</body>
+
+</html>
